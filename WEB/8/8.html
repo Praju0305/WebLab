@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <title>Avg Marks</title>
+    <meta charset=""UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <style>
+        p{
+            margin: 0;
+        }
+        .forms{
+            
+           
+        }
+        h2{
+            text-align: center;
+        }
+        form{
+            border: 2px solid black;
+            border-radius: 4px;
+            margin: 0 auto;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 300px; 
+            margin: 0 auto;
+            background-color:rgb(180, 110, 31);
+        }
+    </style>
+</head>
+<body>
+    <div class="forms">
+    <h2>Average Of Best Two Marks</h2>
+    <form>
+        <label for="namee">Name</label>
+        <input type="text" id="namee"><br>
+        <label for="reg-no">Register number</label>
+        <input type="text" id="reg-no"><br>
+        <label for="sub-code">Subject Code</label>
+        <input type="text" id="sub-code"><br>
+        <label for="sub-1">First Test</label>
+        <input type="text" id="sub-1"><br>
+        <label for="sub-2">Second Test</label>
+        <input type="text" id="sub-2"><br>
+        <label for="sub-3">Third Test</label>
+        <input type="text" id="sub-3"><br>
+        
+        <label for="check"><input type="checkbox" id="check" required> All the details submitted are true</label><br>
+        <button type="button" onclick="validate()">Submit</button>
+    </form>
+</div>
+    <script>
+        function validate(){
+            var name=document.getElementById("namee").value
+            var regno=document.getElementById("reg-no").value
+            var subcode=document.getElementById("sub-code").value
+            var m1=document.getElementById("sub-1").value
+            var m2=document.getElementById("sub-2").value
+            var m3=document.getElementById("sub-3").value
+            
+            if(name===""){
+                alert("Input your name")
+            }
+            else if(regno===""){
+                alert("Input your reg number")
+            }
+            else if (subcode===""){
+                alert("Input the subject code")
+            }
+            else if(m1===""){
+                alert("Input subject -1 marks")
+            }
+            else if(m2===""){
+                alert("input subject 2 marks")
+            }
+            else if(m3===""){
+                alert("input subject 3 marks")
+            }
+            sub1=parseInt(document.getElementById("sub-1").value)
+            sub2=parseInt(document.getElementById("sub-2").value)
+            sub3=parseInt(document.getElementById("sub-3").value)
+            var avg=0
+            if (sub1 > sub2 && sub2 > sub3){
+                avg=(sub1+sub2)/2
+            }
+            if(sub1 > sub2 && sub2 <sub3){
+                avg=(sub1+sub3)/2
+            }
+            alert("Name = "+name+"\nReg No = "+regno+"\nSubject code = "+subcode+"\nSubject 1 = "+m1+"\nSubject 2 = "+m2+"\nSubject 3 = "+m3+"\nAgerage of best two marks = "+avg)
+        }
+    </script>
+</body>
+</html>

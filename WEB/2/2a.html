@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title> Feedback Form </title>
+			<style>
+				body{
+					font-family:sans-serif;
+					background-color: hsla(89,43%,51%,0.3);
+				}
+				
+				header{
+					font-size:x-large;
+					font-weight:bold;
+					text-align:center;
+				}
+				
+				form{
+					background-color:rgba(201,76,76,0.3);
+					margin:10px;
+					padding:10px 20px;
+				}
+				
+				label{
+					display:inline-block;
+					min-width:250px;
+					padding:10px;
+				}
+				
+				h4{
+					margin-bottom:10px;
+				}
+				
+				/*.float{
+					float:left;
+				}*/
+			</style>
+		</head>
+		<body>
+			<header>
+				Student Feedback Form
+			</header>
+			<main>
+				
+				
+				<form action="/" method="POST">
+				<h3> Student details </h3>
+				<label>Name </label>
+				<input />
+				<br />
+				<label>Email Address </label>
+				<input type="main" />
+				<br />
+				<label>USN</label>
+				<input />
+				<hr />
+				
+					<h4>Select Subject and Faculty</h4>
+							<select name="ques-3">
+							<option>Machine Learning </option>
+							<option>Web Technology</option>
+							<option>Internet Of Things</option>
+							<option>Cyber Security</option>
+							<option>OE-II </option>
+							<option>OE-III </option>
+							<option>Machine Learning Laboratry </option>
+							<option>Web Technology Laboratry </option>
+						</select>
+						<select name="ques-3">
+							<option>Prof. Divya H.N</option>
+							<option>Prof. PBM</option>
+							<option>Prof. Manjula S</option>
+							<option>Prof. Rakshith </option>
+							<option>Prof. OE-II</option>
+							<option>Prof. OE-III</option>
+							<option>Prof. DHN</option>
+							<option>Prof. PBM</option>
+						</select>
+					<h3> Feedback Questions </h3>
+				<section>
+					<h4>Was The Teacher Punctual To The class</h4>
+					<input type = "radio" id="op-1" name="ques-1" />
+					<label for ="op-1"> Yes </label>
+					<input type = "radio" id = "op-2" name="ques-1" />
+					<label for="op-2"> No </label>
+					<h4>What Was Your label of satisfaction with the teaching?</h4>
+					<select name="ques-3">
+						<option>Extremly satisfying </option>
+						<option>Satisfying</option>
+						<option>Agreeable</option>
+						<option>unsatisfying</option>
+						<option>Extremly Unsatisfying </option>
+					</select>
+					<h4>was the teacher:(select the applicable checkbox)</h4>
+					<input type ="checkbox" id="ck-1" />
+					<label for="ck-1"> helpful </label>
+					<br />
+					<input type="checkbox" id = "ck-2" />
+					<label for ="ck-2">clear and understandable</label>
+					<br />
+					<input type="checkbox" id "ck-3" />
+					<label for ="ck-3" > knowldgeable</label>
+					<br />
+					<h4>write Your suggestions.</h4>
+					<textarea name= "suggetions" cols="50" rows ="4"> </textarea>
+					<h4>Do You Want to Submit the Form ? </h4>
+					<input type="checkbox" name="agree" required />
+					<label for = "agree">Yes</label>
+				</section>
+				<div>
+					<button>Submit</button>
+					<button type="reset">clear</button>
+				</div>
+				</form> 
+			</main>
+		</body>
+	</html>
+				

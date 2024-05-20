@@ -1,0 +1,19 @@
+#cal{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+input[type="number"],input[type="button"]{
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+input[type="button"]{
+    background-color: rgb(42, 187, 139);
+    color: white;
+}

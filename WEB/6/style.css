@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 0;
+    padding: 0 0;
+    font-family: "Roboto";
+}
+
+h3,
+h4 {
+    margin: 0;
+}
+
+.nav-container {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    height: 8vh;
+}
+
+
+.nav-container>ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+
+.nav-container>ul>li {
+    font-weight: 600;
+}
+
+.nav-container>ul>li>a {
+    text-decoration: none;
+}
+
+.hero-contaniner {
+    height: 92vh;
+}
+
+.hero-contaniner>div {
+    background-image: url('golden\ jublee.jpeg') ;
+    background-size: cover;
+    height: 80%;
+    
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+.glass-container {
+    padding-top: 15%;
+
+}
+
+.glass-container>div>a {
+    background-color: #F26622;
+    padding: 10px 20px;
+    border: #ffffff;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+section {
+    min-height: 100vh;
+}
+
+section>h3 {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    color: #f3f3f3;
+    font-size: 48px;
+}
+
+section>p {
+    width: 60%;
+    margin: 20px auto;
+    color: #f3f3f3;
+    font-size: 20px;
+}
+
+.academic-container {
+    background-color: #003163;
+}
+
+.research-container {
+    background-color: #F26622;
+}
+
+.about-container {
+    background-color: #003163;
+}
+
+footer{
+    display: block;
+    unicode-bidi: isolate;
+}
+
