@@ -1,7 +1,7 @@
 function validate(){
 	let userId=document.getElementById("user").value;
 	let name=document.getElementById("name").value;
-	let password=document.getElementById("password").value;
+	let password=document.getElementById("pass").value;
 	let email=document.getElementById("email").value;
 	
 	
